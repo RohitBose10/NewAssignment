@@ -85,7 +85,8 @@ class PostController {
               { $match: { $expr: { $eq: ["$postId", "$$postId"] } } },
               {
                 $project: {
-                  _id: 1,
+                  _id: 0,
+                  userId: 1,
                   comment: 1,
                 },
               },
