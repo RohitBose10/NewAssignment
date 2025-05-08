@@ -47,7 +47,8 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use(require("./routes/user.routes"));
+app.use("/api", require("./routes/user.routes"));
+
 
 // Server
 app.listen(process.env.PORT, async () => {

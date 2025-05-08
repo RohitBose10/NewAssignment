@@ -66,7 +66,7 @@ router.post("/user/posts", auth.authenticateAPI, postController.addPosts);
 // Get all posts
 
 router.get(
-  "/user/posts",
+  "/user/getposts",
 
   postController.listPosts
 );
